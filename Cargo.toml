@@ -1,0 +1,15 @@
+[package]
+name = "toxzt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = {version = "4.5.4",features = ["derive"]}
+xz2 = { version = "0.1.7",features = ["tokio"]}
+tar = "0.4.40"
+
+
+
+[[bin]]
+name="toxz"
+path = "src/main.rs"
