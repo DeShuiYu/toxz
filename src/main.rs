@@ -2,7 +2,7 @@ use std::error::Error;
 use std::fs::File;
 use std::path::PathBuf;
 use clap::Parser;
-use xz2::read::XzEncoder;
+use xz2::write::XzEncoder;
 
 fn create_xz(src_path:&PathBuf,dst_file_path:&PathBuf,level:u32) ->Result<(),Box<dyn Error>>{
     let dst_file = File::create(dst_file_path)?;
